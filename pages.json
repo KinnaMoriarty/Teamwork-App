@@ -1,0 +1,70 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/center/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+	    ,{
+            "path" : "pages/message/message",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的消息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/calendar/calendar",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的日历",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#515151",
+	    "selectedColor": "#82529d",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/message/message",
+	        "iconPath": "static/icon/message02.png",
+	        "selectedIconPath": "static/icon/message01.png",
+	        "text": "消息"
+	    },{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/icon/project02.png",
+	        "selectedIconPath": "static/icon/project01.png",
+	        "text": "项目"
+	    },{
+	        "pagePath": "pages/calendar/calendar",
+	        "iconPath": "static/icon/calendar02.png",
+	        "selectedIconPath": "static/icon/calendar01.png",
+	        "text": "日历"
+	    }, {
+	        "pagePath": "pages/center/index",
+	        "iconPath": "static/icon/info02.png",
+	        "selectedIconPath": "static/icon/info01.png",
+	        "text": "我"
+	    }]
+	}
+}
